@@ -3,12 +3,9 @@ version: '3.7'
 services: 
 
   dvc-calc-ui:
-    image: tbichse/dvc-calc-ui:1.3-ubuntu
+    image: tbichse/dvc-calc-ui:1.5-ubuntu
     container_name: dvc-calc-ui 
     stdin_open: true
-    environment:
-      API_HOST: dvc-calc-tucker-dev.com
-      API_PROTOCOL: https
     ports: 
       - 8080:80
     depends_on:
